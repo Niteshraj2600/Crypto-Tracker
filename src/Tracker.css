@@ -1,0 +1,120 @@
+/* General Table Styling */
+table {
+  font-size: 1.12rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.t-head th {
+  border-bottom: 2px solid lightgrey;
+  padding: 1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.tbody-tr td {
+  padding: 1rem;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.tname-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.t-volume {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.last img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+
+/* Colors */
+.up {
+  color: rgb(65, 158, 65);
+}
+
+.down {
+  color: rgba(255, 0, 0, 0.749);
+}
+
+.neutral {
+  color: black;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1024px) {
+  table {
+    font-size: 1rem;
+  }
+
+  .tbody-tr td {
+    padding: 0.8rem;
+  }
+
+  .tname-section img {
+    width: 28px;
+  }
+
+  .last img {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tname-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .t-volume {
+    align-items: flex-start;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  .tbody-tr {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+  }
+
+  .tbody-tr td {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tbody-tr td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex: 1;
+    color: #444;
+  }
+
+  .last img {
+    max-width: 100%;
+  }
+}
