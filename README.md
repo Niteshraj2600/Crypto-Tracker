@@ -74,3 +74,4 @@ src/
 Here’s a preview of how the app looks:
 
 ![Crypto Tracker](../src/images/crypto-tracker.png)
+(src/images/crypto-tracker.png)
