@@ -1,12 +1,76 @@
-# React + Vite
+# 📈 Crypto Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic crypto tracking web app that shows real-time updates of cryptocurrency prices, percentage changes, market cap, and more. Built using **React** and **Redux Toolkit**, this project simulates live updates for a modern, interactive dashboard experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo
 
-## Expanding the ESLint configuration
+![Crypto Tracker Demo](./public/demo.gif)
+-> (https://drive.google.com/file/d/1TDPH7kcb2K_ZuW7A4qznVj4YzQGyX7Nn/view?usp=sharing)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<!-- OR you can link a video if hosted -->
+
+[Watch Demo]
+
+-> (https://www.loom.com/share/06110deb29314fd08503e78647f0c8b6?sid=0ba84296-c498-4654-b870-519fab23387d)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Redux Toolkit, CSS
+- **Bundler**: Vite
+- **Styling**: Plain CSS + Responsive design
+- **State Management**: Redux Toolkit + useSelector/useDispatch
+- **Simulated Live Updates**: `setInterval` inside `useEffect`
+
+---
+
+## 🧱 Architecture
+
+src/
+│
+├── components/
+│ └── Tracker.jsx // Main UI table for displaying data
+│
+├── redux/
+│ ├── store.js # Redux store setup
+│ └── trackerSlice.js # Slice for crypto data
+│
+├── assets/
+│ └── demo.gif # Demo GIF or images
+│
+├── App.jsx # Main app entry point
+└── main.jsx # Renders the app using ReactDOM
+
+## 🚀 Setup Instructions
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/crypto-tracker.git
+   cd crypto-tracker
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Visit the app:**
+
+   Open your browser and go to `http://localhost:5173` (default port for Vite).
+
+## 📸 Screenshots
+
+Here’s a preview of how the app looks:
+
+![Crypto Tracker](./images/crypto-tracker.png)
